@@ -248,8 +248,8 @@ public class JaggeryFileViewProvider extends MultiplePsiFilesPerDocumentFileView
         } else if (lang == StdFileTypes.HTML.getLanguage() ){
 
             PsiFileImpl file = (PsiFileImpl) LanguageParserDefinitions.INSTANCE.forLanguage(lang).createFile(this);
-            file.setContentElementType(JaggeryTokenTypes.HTML_TEXT);
-            return LanguageParserDefinitions.INSTANCE.forLanguage(lang).createFile(this);
+            file.setContentElementType(JaggeryTokenTypes.HTML_CONTENT_TYPE);
+            return file;
 
         }
             else {

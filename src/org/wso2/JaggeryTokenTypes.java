@@ -18,6 +18,7 @@ public interface JaggeryTokenTypes {
      * predefined token types
      */
 
+    public static final Ilazy HTML_CONTENT_TYPE = new Ilazy("HTMLContent", StdFileTypes.HTML.getLanguage());   // This is the element type for html
 
     public static final IElementType TEMPLATE_HTML_TEXT = new JaggeryElementType("TEMPLATE_HTML_TEXT");   // This is the element type for html
 
